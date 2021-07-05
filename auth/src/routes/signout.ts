@@ -6,7 +6,7 @@ router.post(
   "/api/users/signout",
   (req: express.Request, res: express.Response) => {
     req.session = null;
-    res.send({});
+    res.send({ message: "Signed out successfully!" });
   }
 );
 
